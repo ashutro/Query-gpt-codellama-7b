@@ -47,6 +47,8 @@ querygpt-local/
 
 ## ⚙️ Setup Instructions
 
+To get started with QueryGPT Local, follow these steps to set up your environment. You'll install and launch Ollama with a local LLM, set up the Python backend, and run the FastAPI server locally.
+
 ### ✅ Step 1: Clone the Repository
 
 ```bash
@@ -71,16 +73,18 @@ This will start the Ollama server at `http://localhost:11434`.
 cd backend
 python3 -m venv venv
 source venv/bin/activate
-pip install fastapi uvicorn pydantic requests
+pip install -r requirements.txt
 ```
 
-> **Optional:** Add any additional requirements in `requirements.txt`.
+> Make sure the `requirements.txt` file exists in the `backend/` directory.
 
-### ✅ Step 4: Start FastAPI Server
+### ✅ Step 4: Start the Backend Server
 
 ```bash
 uvicorn app.main:app --reload
 ```
+
+Once the server is running, you can test it using `curl`, Postman, or a frontend UI like Streamlit. Navigate to `http://localhost:8000/docs` for the interactive Swagger API docs.
 
 API will be running at: `http://localhost:8000`
 
