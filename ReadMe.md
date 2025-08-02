@@ -118,6 +118,25 @@ API will be running at: `http://localhost:8000`
 }
 ```
 
+## 📥 Downloading Final Result
+
+Once your natural language query is processed and the SQL query is executed, you can download the results in various formats. You can integrate this feature using Streamlit or add a button in your frontend to export:
+
+- **CSV**: Export tabular results as `.csv` file
+- **JSON**: Export raw API response
+- **TXT**: Save query explanation and SQL query for reference
+
+> In Streamlit, you can use `st.download_button()` to let users download results:
+
+```python
+st.download_button(
+    label="Download Result as CSV",
+    data=csv_data,
+    file_name='query_results.csv',
+    mime='text/csv',
+)
+```
+
 ---
 
 ## 📊 Example Use Case
