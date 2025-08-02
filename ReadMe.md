@@ -153,7 +153,7 @@ This project is open-sourced under the **MIT License**. Feel free to use, modify
 
 ## 🤝 Contributing
 
-- 💡 Found a bug? Open an [issue](https://github.com/your-username/Query-gpt-codellama-7b/issues)
+- 💡 Found a bug? Open an (https://github.com/your-username/Query-gpt-codellama-7b/issues)
 - 🌟 Star the repo to support
 - 📬 PRs welcome!
 
